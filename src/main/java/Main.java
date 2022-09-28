@@ -30,4 +30,10 @@ public class Main {
         //}
         return result;
     }
+    public static int facultyRecursion(int number){
+        if(number <= 1){
+            return 1;
+        } else
+            return faculty(number-1) * number;
+    }
 }
