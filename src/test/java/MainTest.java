@@ -20,13 +20,23 @@ public class MainTest {
     @Test
     public void testNumberGreaterThan100(){
         //given
-        int number1 = 111;
-        int number2 = 2;
+        int number = 101;
 
         //when
+        boolean actual = Main.checkNumberGreaterThan100(number);
 
         //then
-        assertTrue(Main.checkNumberGreaterThan100(number1));
-        assertFalse(Main.checkNumberGreaterThan100(number2));
+        assertTrue(actual);
+    }
+    @Test
+    public void testNumberSmallerThan100() {
+        //given
+        int number = 100;
+
+        //when
+        boolean actual = Main.checkNumberGreaterThan100(number);
+
+        //then
+        assertFalse(actual);
     }
 }
